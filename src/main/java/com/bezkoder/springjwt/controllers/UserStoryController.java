@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bezkoder.springjwt.models.UserStory;
 import com.bezkoder.springjwt.security.services.ServiceUserStory;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin("*")
 @RequestMapping("/userStory")
 @RestController
 public class UserStoryController {
