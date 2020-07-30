@@ -52,7 +52,6 @@ public class UserDetailsServiceImpl implements UserDetailsService, IserviceUser 
 
 	@Override
 	public User findByUsername(String username) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -63,8 +62,6 @@ public class UserDetailsServiceImpl implements UserDetailsService, IserviceUser 
 			u.setUsername(user.getUsername());
 			u.setEmail(user.getEmail());
 			u.setPhoto(user.getPhoto());
-			
-
 		}
 		return userRepository.save(u);
 		
